@@ -205,6 +205,7 @@ main .secao-destaque .container{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: 5%;
 }
 
 main .secao-destaque .container button{
@@ -254,10 +255,10 @@ main .secao-destaque .container .secao-destaque-conteudo div button.assistir, ma
     background-color: #fff;
     border: none;
     border-radius: 8px;
-    padding: 12px 20px;
+    padding: 12px 15px;
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 5px;
 
 }
 
@@ -267,14 +268,14 @@ main .secao-destaque .container .secao-destaque-conteudo div button.assistir:hov
 
 main .secao-destaque .container .secao-destaque-conteudo div button.assistir::before{
     content: '';
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     display: block;
     background-image: url('../img/play-button.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 main .secao-destaque .container .secao-destaque-conteudo div button.mais-informacoes{
@@ -288,14 +289,14 @@ main .secao-destaque .container .secao-destaque-conteudo div button.mais-informa
 
 main .secao-destaque .container .secao-destaque-conteudo div button.mais-informacoes::before{
     content: '';
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     display: block;
     background-image: url('../img/information.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 
