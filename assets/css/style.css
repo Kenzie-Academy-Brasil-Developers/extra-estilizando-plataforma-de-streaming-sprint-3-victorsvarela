@@ -82,7 +82,9 @@ html{}
 /* HTML */
   
 /* BODY */  
-body{}
+body{
+    background-color: var(--background-body);
+}
 /* BODY */
   
 /* HEADER */
@@ -165,7 +167,7 @@ main .video{
 main video {
     object-fit: cover;
     width: 100vw;
-    height: 300px;
+    height: 330px;
     position: absolute;
     top: 0;
     left: 0;
@@ -191,7 +193,7 @@ main video {
 main .secao-destaque{
     display: flex;
     align-items: center;
-    height: 300px;
+    height: 330px;
     /* background-image: url('');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -300,6 +302,61 @@ main .secao-destaque .container .secao-destaque-conteudo div button.mais-informa
 }
 
 
+/* SECTION CATÁLOGO - CONTINUAR ASSISTINDO */
+
+main .secao-catalogo {
+    position: relative;
+    top: -25px;
+}
+
+main .secao-catalogo .container{
+    padding: 0 30px;
+}
+
+main .secao-catalogo .container h2{
+    color: #fff;
+}
+
+main .secao-catalogo .container ul.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main .secao-catalogo .container ul.flex li.flex-column{
+    display: flex;
+    flex-grow:1;
+    width: 50%;
+    padding-bottom: 5px;
+    
+}
+
+main .secao-catalogo .container ul.flex li a figure{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2px;
+}
+
+main .secao-catalogo .container ul.flex li:nth-child(2n) a figure{
+    justify-content: flex-start;
+}
+
+main .secao-catalogo .container ul.flex li a figure img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+main .secao-catalogo .container ul.flex li a figure figcaption{
+    display: none;
+}
+
+/* SEÇÃO CATÁLOGO - MINHA LISTA, ORIGINAIS E PARA TODA FAMÍLIA */
+main #secao-minha-lista, main #secao-originais, main #secao-para-familia{
+    margin-top: 15px;
+}
+
+
+
 
 
 
@@ -322,7 +379,7 @@ main .secao-destaque .container .secao-destaque-conteudo div button.mais-informa
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
+    @media screen and (min-width: 426px) {}
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 769px) {}
 /* MEDIA QUERIES */
