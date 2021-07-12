@@ -27,10 +27,11 @@ btnMuted.addEventListener('click', disableMute);
 btnUnmuted.addEventListener('click', enableMute);
 
 
-let tamanhoTela = window.matchMedia("(min-width: 769px");
+window.addEventListener('resize', () => {
+    if (innerWidth > 768){
+        vid.muted = true;
+        btnMuted.classList.remove('btnNone');
+        btnUnmuted.classList.add('btnNone');
+    }
+})
 
-if (tamanhoTela.matches === true){
-    vid.muted = true;
-    btnMuted.classList.remove('btnNone');
-    btnUnmuted.classList.add('btnNone');
-}

@@ -619,7 +619,7 @@ main #secao-minha-lista, main #secao-originais, main #secao-para-familia{
 
         main .secao-destaque .container article figure img{
             display: inherit;
-            max-width: 160px;
+            max-width: 650px;
         }
     
         main .secao-destaque .container button{
@@ -649,6 +649,10 @@ main #secao-minha-lista, main #secao-originais, main #secao-para-familia{
         main .secao-catalogo {
             position: relative;
             top: -60px;
+        }
+
+        main .secao-catalogo .container{
+            max-width: 1735px;
         }
 
         main .secao-catalogo .container ul.flex li.flex-column{
