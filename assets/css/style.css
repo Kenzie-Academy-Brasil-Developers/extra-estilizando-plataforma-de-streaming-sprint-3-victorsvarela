@@ -31,6 +31,7 @@ family=Lato -> Títulos, textos
 /* VARIÁVEIS */
 :root{
     --background-body:  #141414;
+    --color-white: #ffffff;
 }
   
 /* GERAL */
@@ -43,7 +44,7 @@ html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
 }
 a:link{
     text-decoration: none;
-    color: #ffffff;
+    color: var(--color-white);
 }
 img{
     max-width: 800px;
@@ -118,14 +119,14 @@ header .container .flex .flex-column:nth-child(2){
 
 header .container .flex .flex-column:nth-child(2) .mobile-element{
     display: flex;
-    color: #ffffff
+    color: var(--color-white);
 }
 
 header .container .flex .flex-column:nth-child(2) .mobile-element .triangulo{
     width: 8px;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 8px solid white;
+    border-top: 8px solid var(--color-white)
     margin-left: 10px
 }
 
@@ -243,7 +244,7 @@ main video {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: white;
+    color: var(--color-white);
     font-size: 15px;
     width: 36px;
     height: 36px;
@@ -288,7 +289,7 @@ main .secao-destaque .container button{
     justify-content: center;
     background-color: transparent;
     border-radius: 100%;
-    border: 1px solid #fff;
+    border: 1px solid var(--color-white);
     padding: 10px;
     cursor: pointer;
 }
@@ -304,7 +305,7 @@ main .secao-destaque .container button img{
 
 
 main .secao-destaque .container .secao-destaque-conteudo{
-    color: #ffffff;
+    color: var(--color-white);
     background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -323,7 +324,7 @@ main .secao-destaque .container .secao-destaque-conteudo div{
 }
 
 main .secao-destaque .container .secao-destaque-conteudo div button.assistir, main .secao-destaque .container .secao-destaque-conteudo div button.mais-informacoes{
-    background-color: #fff;
+    background-color: var(--color-white);
     border: none;
     border-radius: 8px;
     padding: 12px 15px;
@@ -351,7 +352,7 @@ main .secao-destaque .container .secao-destaque-conteudo div button.assistir::be
 
 main .secao-destaque .container .secao-destaque-conteudo div button.mais-informacoes{
     background-color: rgba(109,109,110,0.7);
-    color: #fff;
+    color: var(--color-white);
 }
 
 main .secao-destaque .container .secao-destaque-conteudo div button.mais-informacoes:hover{
@@ -383,7 +384,7 @@ main .secao-catalogo .container{
 }
 
 main .secao-catalogo .container h2{
-    color: #fff;
+    color: var(--color-white);
 }
 
 main .secao-catalogo .container ul.flex{
