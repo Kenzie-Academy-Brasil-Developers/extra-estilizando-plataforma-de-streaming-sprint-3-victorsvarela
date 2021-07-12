@@ -66,7 +66,6 @@ div.container{
     max-width: 1140px;
     margin:0 auto;
 }
-
 .hidden {
     visibility: hidden;
 }
@@ -101,7 +100,6 @@ header .container{
     padding: 30px;
     padding-bottom: 0;
     padding-top: 20px;
-
 }
 
 header .container .flex{
@@ -526,6 +524,20 @@ main #secao-minha-lista, main #secao-originais, main #secao-para-familia{
             flex-grow: 1;
         }
 
+        header .container .flex .flex-column:nth-child(3) .menu-usuario{
+            display: flex;
+            align-items: center;
+        }
+
+        header .container .flex .flex-column:nth-child(3) .menu-usuario .pesquisar{
+            visibility: inherit;
+            padding-right: 20px;
+        }
+
+        header .container .flex .flex-column:nth-child(3) .menu-usuario .pesquisar img{
+            width: 20px;
+        }
+
         header .container .flex .flex-column:nth-child(3) .menu-usuario .usuario img{
             width: 32px;
         }
@@ -641,6 +653,10 @@ main #secao-minha-lista, main #secao-originais, main #secao-para-familia{
 
         main .secao-catalogo .container ul.flex li.flex-column{
             flex-basis: 0.33px;
+            width: inherit;
+        }
+
+        main .secao-catalogo .container ul.flex li.flex-column a figure{
             width: inherit;
         }
 
