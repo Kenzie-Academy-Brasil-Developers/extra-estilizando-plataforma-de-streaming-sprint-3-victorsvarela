@@ -140,17 +140,16 @@ header .container .flex .flex-column:nth-child(3) .menu-usuario .pesquisar{
     visibility: hidden;
 }
 
-header .container .flex .flex-column:nth-child(3) .menu-usuario .usuario{
-
+header .container .flex .flex-column:nth-child(3) .menu-usuario .usuario img{
+    width: 28px;
 }
 
 
-
-
-
-
 /* HEADER */
-  
+
+
+
+
 /* FOOTER */
 footer{
     border: 1px solid rgb(128 128 128 / 26%);
@@ -213,6 +212,10 @@ footer div.container div.copyright p{
 
 /* FOOTER */
 
+
+
+
+
 /* INICIAL */
 main{}
 
@@ -268,6 +271,15 @@ main .secao-destaque .container{
     margin-top: 5%;
 }
 
+main .secao-destaque .container .secao-destaque-conteudo figure{
+    display: flex;
+    align-items: center;
+}
+
+main .secao-destaque .container article figure img{
+    display: none;
+}
+
 main .secao-destaque .container button{
     display: flex;
     align-items: center;
@@ -294,10 +306,6 @@ main .secao-destaque .container .secao-destaque-conteudo{
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-main .secao-destaque .container .secao-destaque-conteudo figure{
-    display: flex;
-    align-items: center;
-}
 
 main .secao-destaque .container .secao-destaque-conteudo figure p{
     padding-left: 10px
@@ -309,6 +317,7 @@ main .secao-destaque .container .secao-destaque-conteudo p{
 
 main .secao-destaque .container .secao-destaque-conteudo div{
     display: flex;
+    align-items: center;
 }
 
 main .secao-destaque .container .secao-destaque-conteudo div button.assistir, main .secao-destaque .container .secao-destaque-conteudo div button.mais-informacoes{
@@ -438,5 +447,132 @@ main #secao-minha-lista, main #secao-originais, main #secao-para-familia{
 /* MEDIA QUERIES */
     @media screen and (min-width: 426px) {}
   
-    @media screen and (min-width: 769px) {}
+    @media screen and (min-width: 769px) {
+
+        /* HEADER */
+
+        header{
+            background: linear-gradient(to bottom, rgba(0,0,0,.7) 10%, rgba(0,0,0,0))
+        }
+
+        header .container{
+            max-width: 1735px;
+            font-size: 14px;
+        }
+
+        header .container .flex .flex-column{
+            display: flex;
+            align-items: center;
+        }
+
+        header .container .flex .flex-column .logo{
+            width: 92px;
+        }
+
+        header .container .flex .flex-column .logo figure img{
+            width: 92px;
+        }
+
+        header .container .flex .flex-column .logo figure figcaption{
+            display: none;
+        }
+
+        header .container .flex .flex-column:nth-child(2){
+            margin-left: 20px;
+        }
+
+        header .container .flex .flex-column:nth-child(2) span.abrir-submenu {
+            display: none;
+        }
+
+        header .container .flex .flex-column:nth-child(2) ul{
+            display: flex;
+        }
+
+        header .container .flex .flex-column:nth-child(2) ul li{
+            padding: 5px 10px;
+            color: #e5e5e5;
+        }
+
+        header .container .flex .flex-column:nth-child(2) ul li a{
+            color: #e5e5e5;
+        }
+
+        header .container .flex .flex-column:nth-child(2) ul li a:hover{
+            color: #b3b3b3;
+        }
+
+        header .container .flex .flex-column:nth-child(3){
+            display: flex;
+            justify-content: flex-end;
+            flex-grow: 1;
+        }
+
+        header .container .flex .flex-column:nth-child(3) .menu-usuario .usuario img{
+            width: 32px;
+        }
+
+        /* HEADER */
+
+
+
+        /* FOOTER */
+
+        /* FOOTER */
+
+
+
+        /* INICIAL */
+
+        main .video{
+            display: none;
+        }
+
+        main .secao-destaque{
+            height: 100vh;
+            background-image: url('../img/movies/ted.webp');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size:cover;
+        }
+
+        main .secao-destaque .container{
+            align-items: flex-start;
+        }
+
+        main .secao-destaque .container .secao-destaque-conteudo figure{
+            flex-direction: column;
+            align-items: flex-start;
+            flex-grow: 1;
+            flex-wrap: wrap;
+        }
+
+        main .secao-destaque .container article figure img{
+            display: inherit;
+            max-width: 160px;
+        }
+    
+        main .secao-destaque .container button{
+            font-size: 22px;
+        }
+
+        main .secao-destaque .container .secao-destaque-conteudo{
+            background-color: inherit;
+            margin-bottom: 30px;
+        }
+
+        main .secao-destaque .container .secao-destaque-conteudo figure > div{
+            margin-top: 10px
+        }
+
+
+        main .secao-destaque .container .secao-destaque-conteudo div button.assistir, main .secao-destaque .container .secao-destaque-conteudo div button.mais-informacoes{
+            padding: 10px 20px;
+        }
+        
+        /* INICIAL */
+
+
+    }
 /* MEDIA QUERIES */
